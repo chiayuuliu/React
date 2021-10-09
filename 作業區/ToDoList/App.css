@@ -1,0 +1,27 @@
+.remove{
+  text-decoration: line-through;
+}
+.wrap{
+  margin: 20px;
+  width: 300px;
+}
+
+input{
+  width: 200px;
+  padding: 5px 10px;
+  border: none;
+}
+form{
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  width: 250px;
+}
+
+input:focus{
+  outline: none;
+}
+button{
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+}
