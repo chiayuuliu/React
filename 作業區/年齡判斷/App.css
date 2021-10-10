@@ -1,8 +1,28 @@
 *{
-  margin: 20px;
+  margin: 5px;
+}
+input{
+  padding: 5px;
+  width: 200px;
+  box-shadow: 2px 2px 5px lightgrey;
+  border: none;
+}
+h5{
+  color: rgb(203, 106, 106);
+  font-weight: bold;
 }
 .text{
   color: red;
   font-weight: bold;
   font-size: 20px;
+}
+button{
+  border: none;
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: lightcoral;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px lightgrey;
 }
