@@ -47,7 +47,6 @@ function ProductItem(props) {
           <div className="col">
             ${price} <span className="close"
             onClick={()=>{
-                console.log(name)
                 const newProductList = productsInOrder.filter(function(value){
                     return value.name !== name
                 })

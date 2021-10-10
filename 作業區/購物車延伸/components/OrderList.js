@@ -14,9 +14,10 @@ function OrderList(props) {
               <h4>
                 <b>訂購單</b>
               </h4>
+              {!(productsInOrder.length) && (<p className="empty">購物車目前沒有商品</p>)}
             </div>
             <div className="col align-self-center text-right text-muted">
-              3種商品項目
+              {productsInOrder.length}種商品項目
             </div>
           </div>
         </div>

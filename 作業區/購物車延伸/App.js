@@ -41,7 +41,6 @@ const initStateWithObjcet = (products) => {
   for (let i = 0; i < products.length; i++) {
     state.push({ ...products[i], count: 1 })
   }
-
   return state
 }
 
@@ -58,6 +57,7 @@ function App() {
   const [productsInOrder, setProductsInOrder] = useState(
     initStateWithObjcet(products)
   )
+  // 運送選項
   const [delivery, setDelivery] = useState('')
 
   // Summary
@@ -84,16 +84,23 @@ function App() {
     } 
     return sum
   }
+  
+  if(!productsInOrder.length){
+    console.log(!(productsInOrder.length))
+    console.log(!!total)
+    console.log(productCount()==0)
 
+
+  }
   return (
     <div className="card">
       <div className="row">
         <OrderList
           productsInOrder={productsInOrder}
           setProductsInOrder={setProductsInOrder}
-
         />
         <Summary 
+        productsInOrder={productsInOrder}
         delivery={delivery}
         setDelivery={setDelivery}
         productCount={productCount()} 

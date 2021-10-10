@@ -190,3 +190,8 @@ a:hover {
 .col-style {
   padding-left: 0;
 }
+.empty{
+  box-sizing: border-box;
+  margin-top: 30px;
+  color: rgb(75, 66, 177);
+}

@@ -11,7 +11,8 @@ function Summary(props) {
             <b>付款摘要</b>
           </h5>
           <h5>運送方式</h5>
-          <select
+          <select 
+            disabled={!productCount}
             value={delivery}
             onChange={(e)=>{
                 setDelivery(e.target.value)
