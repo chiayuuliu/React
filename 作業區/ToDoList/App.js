@@ -10,10 +10,11 @@ const App = () => {
   return (
     <>
     <div className="wrap">
-        <h2>代辦事項</h2>
+        <h2>To Do List</h2>
           <form>
             <input type="text" placeholder="請輸入代辦事項"
               value={input}
+              
               onChange={(e)=>{
                 setInput(e.target.value)
                 console.log(input)
@@ -29,7 +30,7 @@ const App = () => {
               setTodolist(newTodolist)
               setInput('')
               }             
-            }} >Add</button>
+            }} >新增</button>
           </form>
             <ul>
             {todolist.map((v,i)=>{
